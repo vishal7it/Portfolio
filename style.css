@@ -1,0 +1,203 @@
+ /* Basic reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: #f5f5f5;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #212121, #424242);
+    color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    position: relative;
+    perspective: 2000px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: #1a237e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    border-radius: 10px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page.visible {
+    display: flex;
+}
+
+h1,
+h2 {
+    color: #bbdefb;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #bbdefb;
+    animation: typing 10s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 100%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    75% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-container .next {
+    margin-left: auto;
+}
+
+button {
+    padding: 10px 20px;
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background: #1e88e5;
+}
+
+/* Dark mode button style */
+body.dark-mode button {
+    background: #0d47a1;
+}
+
+body.dark-mode button:hover {
+    background: #1565c0;
+}
+
+.dark-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background: #1e88e5;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: bounce 1.5s ease-in-out infinite;
+    /* Bouncing effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.6);
+    /* Light background behind the image */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Soft shadow effect */
+    padding: 10px;
+    /* Padding around the image */
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    /* Increase shadow on hover */
+}
+
+/* Bouncing effect keyframes */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Adjust this value for the bounce height */
+    }
+
+
+
+}
