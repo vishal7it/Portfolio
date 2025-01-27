@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Vishal Sharma</span><br>From Bhilwara, Rajasthan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>👨‍💻 I’ve been fascinated by computers since childhood! My passion for tech drives me to
+                        constantly learn and create. I specialize in <strong>HTML, CSS, JavaScript, Node.js, Express,
+                            MongoDB, and Mongoose</strong> to build cool, dynamic web applications.</p>
+
+                    <p>🔍 I approach problems by breaking them into small, manageable tasks. It keeps me motivated and
+                        helps me solve even the toughest challenges.</p>
+
+                    <p>🎓 As a <strong>B.Tech IT undergraduate</strong>, I’m committed to growing and honing my skills
+                        every day. My goal? Continuous improvement! 🚀</p>
+
+                    <p>Outside of coding, you’ll find me:<br>
+                        🏏 Playing or watching cricket<br>
+                        👨‍🍳 Cooking up something new<br>
+                        🎨 Exploring art and craft (I love painting my house walls too!)</p>
+
+                    <p>💡 Let’s connect and create something amazing!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML CSS</span><br>Know how to make responsive web app Layouts</li>
+                            <li><span>Advance JavaScript</span><br>Advance concepts of Java Script Dom manipulation
+                                destructuring Databases</li>
+                            <li><span>Nodejs | MongoDB | Express | Mongoose | Docker | Authorization</span><br>Complete
+                                Backend Handling</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2023 - June 2024</span><br>Home Business | Own Business</li>
+                            <li><span> January 2021 - February 2021</span><br>Fox Trading Solution Internship</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>July 2024-present</span><br>Full Stack Web Development Masai School</li>
+                            <li><span>August 2018 - August 2023</span><br>B.Tech (Information & Technology) Rajasthan
+                                Technical University,
+                                Kota</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>HTML CSS</h2>
+                    <p>Know how to make responsive web app Layouts</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop-alt"></i>
+                    <h2>Advance JavaScript</h2>
+                    <p>Advance concepts of Java Script Dom manipulation destructuring Databases</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-app-store"></i>
+                    <h2>Complete Backend Handling</h2>
+                    <p>Nodejs | MongoDB | Express | Mongoose | Docker | Authorization</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Dice roll and hold game</h3>
+                        <p>Dice roll game nice two player Attractive game | Luck + Patience Required
+                        </p>
+                        <a href="https://dice-roll-mini-game.netlify.app/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Guess my number mini game</h3>
+                        <p>Guess my number is also a mini game attrative in nature | luck game
+                        </p>
+                        <a href="https://guess-my-number-game-mini.netlify.app/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Motify Music streaming web app frontend Interface</h3>
+                        <p>Motify is a music app having some features like spotify having some amazing motivational
+                            songs.
+                        </p>
+                        <a href="https://strong-puffpuff-919c4d.netlify.app/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-envelope" style="font-size:25px;color:pink"> vishal7it@gmail.com</i> </p>
+                    <p><i class="fa fa-phone" style="font-size:25px;color:pink"> +91 950 993 269 9</i></p>
+                    <div class="social-icons">
+
+
+                        <a href="https://github.com/vishal7it" target="_blank"><i class="fa fa-github"
+                                style="font-size:48px;color:pink"></i>Github</a>
+                        <a href="https://www.linkedin.com/in/vishalsharma321/" target="_blank"><i
+                                class="fa fa-linkedin-square" style="font-size:48px;color:Pink"></i> Linkedin</a>
+                    </div>
+                    <a href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=678e1b21f7b3074e9137e5bd"
+                        target="_blank" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vishal </p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://docs.google.com/spreadsheets/d/12QIUdvZ8He6wUxcq3rve022BR9D0xdauDCvZ77XVd7c/edit?usp=sharing' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
