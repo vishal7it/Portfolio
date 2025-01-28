@@ -24,14 +24,14 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
                 <h1>Hi, I'm <span>Vishal Sharma</span><br>From Bhilwara, Rajasthan</h1>
-                <a href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=678e1b21f7b3074e9137e5bd"
-                    target="_blank" download class="btn btn2">Resume</a>
-                <a href="images/my-cv.pdf" download class="btn btn2">👇</a>
+                <a href="https://drive.google.com/file/d/1PYIJGgE6W0bi9XFrhbnym5iBVFww4YdW/view?usp=sharing"
+                    target="_blank" download class="btn btn2" onclick="downloadAndRedirect()">Resume</a>
+
             </div>
         </div>
     </div>
@@ -182,9 +182,8 @@
                         <a href="https://www.linkedin.com/in/vishalsharma321/" target="_blank"><i
                                 class="fa fa-linkedin-square" style="font-size:48px;color:Pink"></i> Linkedin</a>
                     </div>
-                    <a href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=678e1b21f7b3074e9137e5bd"
-                        target="_blank" download class="btn btn2">Resume</a>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1PYIJGgE6W0bi9XFrhbnym5iBVFww4YdW/view?usp=sharing"
+                        target="_blank" download class="btn btn2" onclick="downloadAndRedirect()">Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -218,6 +217,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+        function downloadAndRedirect() {
+            // Trigger the resume download
+            const resumeLink = document.createElement('a');
+            resumeLink.href = 'images/my-cv.pdf'; // Path to the resume file for download
+            resumeLink.download = 'My_Resume.pdf'; // Suggested download file name
+            resumeLink.click();
+
+            // Redirect to the Drive link
+
         }
 
     </script>

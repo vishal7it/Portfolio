@@ -24,11 +24,13 @@ body{
 }
 
 nav{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .logo{
     width: 140px;
@@ -46,6 +48,7 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -390,4 +393,17 @@ nav .fas{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+nav {
+    position: fixed; /* Makes the nav bar stick to a fixed position */
+    top: 0; /* Aligns the nav bar to the top of the viewport */
+    width: 100%; /* Ensures the nav spans the entire width of the viewport */
+    background: rgba(0, 0, 0, 0.8); /* Adds a semi-transparent background for readability */
+    z-index: 1000; /* Ensures the nav bar appears above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10%; /* Optional: Adds padding to maintain spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
 }
