@@ -200,6 +200,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    height:500px
 }
 .layer{
     width: 100%;
@@ -238,8 +239,23 @@ nav ul li a:hover::after{
 .work:hover img{
     transform: scale(1.1);
 }
-.work:hover .layer{
+.work  .layer{
     height: 100%;
+
+}
+.work .layer h3{
+    font-size: 25px;
+color: white;
+/* font-size: larger; */
+font-weight:900;
+font-family:cursive;
+letter-spacing: 0.1cap;
+}
+.work .layer p{
+    color: white;
+font-size: larger;
+font-weight:300;
+letter-spacing: 0.1cap;
 }
 .btn{
     display: block;
@@ -406,4 +422,28 @@ nav {
     flex-wrap: wrap;
     padding: 10px 10%; /* Optional: Adds padding to maintain spacing */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+}
+
+
+/**/
+
+/* Parent container */
+.work-list {
+   display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to a new line */
+  gap: 1rem; /* Creates space between items */
+}
+
+/* Child divs */
+.work {
+   /*
+   * The magic formula for wrapping:
+   * flex-grow: 0 (don't grow)
+   * flex-shrink: 0 (don't shrink)
+   * flex-basis: calc(33.333% - 1rem); (set initial width, accounting for gap)
+   * A shorthand for this is `flex: 0 0 calc(33.333% - 1rem);`
+   */
+  flex: 0 0 calc(33.333% - 1rem);
+  padding: 1rem;
+  
 }
